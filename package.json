@@ -1,14 +1,19 @@
 {
+  "homepage": "http://QuangDung159.github.io/test-deploy-vue-app",
   "name": "test-deploy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "start": "vue-cli-service start"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "gh-pages": "^3.1.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
